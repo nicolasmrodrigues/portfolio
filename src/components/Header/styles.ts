@@ -109,10 +109,15 @@ export const TitleLink = styled.a`
 `
 
 export const Overlay = styled.div`
-	position: fixed;
-	top: 0;
-	right: 0;
-	width: 30%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.6);
+	display: none;
+
+	@media (max-width: 768px) {
+		display: block;
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 30%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+	}
 `
