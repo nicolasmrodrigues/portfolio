@@ -1,13 +1,14 @@
 import styled from 'styled-components'
 
 export const Project = styled.li`
-	height: 680px;
 	padding: 24px;
 	background-color: #202429;
 	border-radius: 8px;
 	display: grid;
   grid-auto-rows: 240px 32px auto 50px;
 	flex: 1;
+	max-width: 395px;
+  min-width: 338px;
 
 	@media (max-width: 768px) {
 		height: 696px;

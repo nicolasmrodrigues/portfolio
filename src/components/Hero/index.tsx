@@ -1,3 +1,5 @@
+import { IconContext } from 'react-icons'
+import { FaArrowDown } from 'react-icons/fa'
 import {
 	Container,
 	Hero as HeroStyle,
@@ -5,8 +7,7 @@ import {
 	Subtitle,
 	Image
 } from './styles'
-import { IconContext } from 'react-icons'
-import { FaArrowDown } from 'react-icons/fa'
+import DownloadButton from '../DownloadButton'
 const Hero = () => {
 	return (
 		<>
@@ -14,6 +15,7 @@ const Hero = () => {
 				<Container>
 					<Subtitle>Olá 👋, eu sou Nícolas Medeiros</Subtitle>
 					<Subtitle>Bem vindo ao meu portfólio!</Subtitle>
+					<DownloadButton />
 				</Container>
 				<Container>
 					<Image src="/computers.png" alt="" />

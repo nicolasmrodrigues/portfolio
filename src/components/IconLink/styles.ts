@@ -13,9 +13,4 @@ export const Icon = styled.a`
 	&:hover {
 		transform: scale(1.06);
 	}
-
-	@media (max-width: 768px) {
-		height: 56px;
-		margin: 10px 5px;
-	}
 `

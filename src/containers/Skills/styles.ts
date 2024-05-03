@@ -8,8 +8,4 @@ export const SkillsList = styled.ul`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-
-	@media (max-width: 768px) {
-		justify-content: start;
-	}
 `

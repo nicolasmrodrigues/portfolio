@@ -44,6 +44,7 @@ export const Subtitle = styled(Title)`
 	font-family: 'Fira Code', monospace;
 	font-weight: 400;
 	letter-spacing: -1px;
+	text-align: center;
 `
 
 export const Container = styled.div`
