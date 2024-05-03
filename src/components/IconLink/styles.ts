@@ -8,6 +8,10 @@ export const Icon = styled.a`
 	img {
 		width: auto;
 		height: 80px;
+
+		@media (max-width: 768px) {
+			height: 65px;
+		}
 	}
 
 	&:hover {
