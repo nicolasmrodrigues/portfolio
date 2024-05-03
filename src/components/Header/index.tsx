@@ -8,7 +8,8 @@ import {
 	ListLink,
 	NavButton,
 	TitleLink,
-	HeaderIcon
+	HeaderIcon,
+	Overlay
 } from './styles'
 
 const Header = () => {
@@ -19,6 +20,10 @@ const Header = () => {
 		setScroll(window.scrollY)
 	}
 
+	const changeNavVisibility = () => {
+		setIsVisible(!isVisible)
+	}
+
 	return (
 		<HeaderStyle className={scroll > 128 ? 'background' : ''}>
 			<HeaderContainer>
@@ -26,49 +31,40 @@ const Header = () => {
 					<HeaderIcon src="/favicon.png" alt="" />
 					<Title as="h1">Nícolas Medeiros</Title>
 				</TitleLink>
-				<NavButton onClick={() => setIsVisible(!isVisible)}>Menu</NavButton>
+				<NavButton onClick={changeNavVisibility}>Menu</NavButton>
 				<Navegation isVisible={isVisible}>
 					<>
-						<NavButton onClick={() => setIsVisible(!isVisible)}>X</NavButton>
-						<List>
-							<li>
-								<ListLink onClick={() => setIsVisible(!isVisible)} href="#">
-									Início
-								</ListLink>
-							</li>
-							<li>
-								<ListLink
-									onClick={() => setIsVisible(!isVisible)}
-									href="#aboutMe"
-								>
-									Sobre
-								</ListLink>
-							</li>
-							<li>
-								<ListLink
-									onClick={() => setIsVisible(!isVisible)}
-									href="#skills"
-								>
-									Habilidades
-								</ListLink>
-							</li>
-							<li>
-								<ListLink
-									onClick={() => setIsVisible(!isVisible)}
-									href="#projects"
-								>
-									Projetos
-								</ListLink>
-							</li>
-							<li>
-								<ListLink
-									onClick={() => setIsVisible(!isVisible)}
-									href="#contact"
-								>
-									Contato
-								</ListLink>
-							</li>
-						</List>
+						<Overlay onClick={changeNavVisibility} />
+						<div>
+							<NavButton onClick={changeNavVisibility}>X</NavButton>
+							<List>
+								<li>
+									<ListLink onClick={changeNavVisibility} href="#">
+										Início
+									</ListLink>
+								</li>
+								<li>
+									<ListLink onClick={changeNavVisibility} href="#aboutMe">
+										Sobre
+									</ListLink>
+								</li>
+								<li>
+									<ListLink onClick={changeNavVisibility} href="#skills">
+										Habilidades
+									</ListLink>
+								</li>
+								<li>
+									<ListLink onClick={changeNavVisibility} href="#projects">
+										Projetos
+									</ListLink>
+								</li>
+								<li>
+									<ListLink onClick={changeNavVisibility} href="#contact">
+										Contato
+									</ListLink>
+								</li>
+							</List>
+						</div>
 					</>
 				</Navegation>
 			</HeaderContainer>

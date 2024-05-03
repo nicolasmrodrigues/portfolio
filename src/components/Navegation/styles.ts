@@ -9,8 +9,8 @@ export const Navegation = styled.nav<Props>`
 		position: fixed;
 		top: 0;
 		left: 0;
-		width: 70dvw;
-		height: 100dvh;
+		width: 70%;
+		height: 100%;
 		z-index: 2;
 		padding: 24px;
 		background-color: #28292e;

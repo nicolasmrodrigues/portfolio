@@ -107,3 +107,12 @@ export const TitleLink = styled.a`
 	cursor: pointer;
 	text-decoration: none;
 `
+
+export const Overlay = styled.div`
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 30%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+`
