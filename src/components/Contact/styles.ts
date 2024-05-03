@@ -9,7 +9,3 @@ export const IconsList = styled.ul`
 	justify-content: center;
 	margin-top: 32px;
 `
-
-export const IconItem = styled.li`
-	margin: 0 16px;
-`

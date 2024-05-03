@@ -1,6 +1,6 @@
 import { SkillsList, Skills as SkillsStyle } from './styles'
 import Title from '../../components/Title'
-import Skill from '../../components/Skill'
+import Icon from '../../components/IconLink'
 
 const Skills = () => {
 	const skills = [
@@ -23,6 +23,15 @@ const Skills = () => {
 		'python'
 	]
 
+	const formatSkill = (skill: string) => {
+		if (skill === 'js') return 'Javascript'
+		if (skill === 'css') return 'CSS'
+		if (skill === 'html') return 'HTML'
+		if (skill === 'styledcomponents') return 'Styled components'
+
+		return skill[0].toUpperCase() + skill.substring(1)
+	}
+
 	return (
 		<SkillsStyle id="skills">
 			<Title as="h2" alignment="center">
@@ -30,10 +39,14 @@ const Skills = () => {
 			</Title>
 			<SkillsList>
 				{skills.map((skill, index) => (
-					<Skill
-						key={index}
-						skillIconLink={`https://skillicons.dev/icons?theme=light&i=${skill}`}
-					></Skill>
+					<li key={index}>
+						<Icon
+							href={`https://www.google.com/search?&q=${formatSkill(skill)}`}
+							title={`Clique para pesquisar sobre: ${formatSkill(skill)}`}
+							src={`https://skillicons.dev/icons?theme=light&i=${skill}`}
+							alt={`Logo de ${formatSkill(skill)}`}
+						></Icon>
+					</li>
 				))}
 			</SkillsList>
 		</SkillsStyle>

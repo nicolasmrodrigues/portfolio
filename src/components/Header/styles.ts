@@ -67,6 +67,10 @@ export const ListLink = styled.a`
 		padding: 10px 16px;
 		margin: 8px;
 	}
+
+	@media (min-width: 768px) and (max-width: 1024px) {
+		margin: 0 4px;
+	}
 `
 
 export const NavButton = styled.button`
@@ -106,6 +110,7 @@ export const TitleLink = styled.a`
 	align-items: center;
 	cursor: pointer;
 	text-decoration: none;
+	margin-right: 32px;
 `
 
 export const Overlay = styled.div`

@@ -1,6 +1,6 @@
-import Icon from '../Icon'
+import Icon from '../IconLink'
 import Title from '../Title'
-import { Contact as ContactStyle, IconsList, IconItem } from './styles'
+import { Contact as ContactStyle, IconsList } from './styles'
 
 const Contact = () => (
 	<ContactStyle id="contact">
@@ -8,29 +8,24 @@ const Contact = () => (
 			Entre em Contato
 		</Title>
 		<IconsList>
-			<IconItem>
-				<a href="mailto:nicolasmedeiros090@gmail.com">
-					<Icon src="https://skillicons.dev/icons?theme=light&i=gmail" />
-				</a>
-			</IconItem>
-			<IconItem>
-				<a
-					href="https://www.linkedin.com/in/nicolasmrodrigues/"
-					target="_blank"
-					rel="noreferrer"
-				>
-					<Icon src="https://skillicons.dev/icons?i=linkedin" />
-				</a>
-			</IconItem>
-			<IconItem>
-				<a
-					href="https://github.com/nicolasmrodrigues"
-					target="_blank"
-					rel="noreferrer"
-				>
-					<Icon src="https://skillicons.dev/icons?theme=light&i=github" />
-				</a>
-			</IconItem>
+			<Icon
+				href="mailto:nicolasmedeiros090@gmail.com"
+				src="https://skillicons.dev/icons?theme=light&i=gmail"
+				title="Clique para me enviar um email"
+				alt="Logo do Gmail"
+			/>
+			<Icon
+				href="https://www.linkedin.com/in/nicolasmrodrigues/"
+				src="https://skillicons.dev/icons?i=linkedin"
+				title="Clique para acessar meu LinkedIn"
+				alt="Logo do LinkedIn"
+			/>
+			<Icon
+				href="https://github.com/nicolasmrodrigues"
+				src="https://skillicons.dev/icons?theme=light&i=github"
+				title="Clique para acessar meu GitHub"
+				alt="Logo do GitHub"
+			/>
 		</IconsList>
 	</ContactStyle>
 )
