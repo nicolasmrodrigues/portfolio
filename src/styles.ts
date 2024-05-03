@@ -13,6 +13,10 @@ const GlobalStyle = createGlobalStyle`
 		background-color: #282d34;
 		overflow-x: hidden;
 	}
+
+	html {
+		scroll-behavior: smooth;
+	}
 `
 
 export const Container = styled.div`
