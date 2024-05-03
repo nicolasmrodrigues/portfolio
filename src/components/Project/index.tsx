@@ -24,7 +24,9 @@ const Project = ({
 }: Props) => (
 	<ProjectStyle>
 		<ProjectImage src={imageLink} alt="" />
-		<Title fontSize={24}>{title}</Title>
+		<Title as="h3" fontSize={24}>
+			{title}
+		</Title>
 		<Text>{description}</Text>
 		<ProjectLinksContainer>
 			<ProjectLink href={deployLink} target="_blank">

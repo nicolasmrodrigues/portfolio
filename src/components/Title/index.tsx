@@ -4,10 +4,11 @@ export type Props = {
 	children: string
 	alignment?: 'center' | 'start'
 	fontSize?: number
+	as?: string
 }
 
-const Title = ({ children, alignment = 'start', fontSize }: Props) => (
-	<TitleStyle alignment={alignment} fontSize={fontSize}>
+const Title = ({ children, alignment = 'start', fontSize, as }: Props) => (
+	<TitleStyle as={as} alignment={alignment} fontSize={fontSize}>
 		{children}
 	</TitleStyle>
 )

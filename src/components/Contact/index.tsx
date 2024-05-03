@@ -4,7 +4,9 @@ import { Contact as ContactStyle, IconsList, IconItem } from './styles'
 
 const Contact = () => (
 	<ContactStyle id="contact">
-		<Title alignment="center">Entre em Contato</Title>
+		<Title as="h2" alignment="center">
+			Entre em Contato
+		</Title>
 		<IconsList>
 			<IconItem>
 				<a href="mailto:nicolasmedeiros090@gmail.com">

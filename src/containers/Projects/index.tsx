@@ -4,7 +4,9 @@ import { Projects as ProjectsStyle, ProjectsList } from './styles'
 
 const Projects = () => (
 	<ProjectsStyle id="projects">
-		<Title alignment="center">Projetos</Title>
+		<Title as="h2" alignment="center">
+			Projetos
+		</Title>
 		<ProjectsList>
 			<Project
 				imageLink="/project1.webp"

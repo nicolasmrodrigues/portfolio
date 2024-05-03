@@ -57,13 +57,14 @@ export const ListLink = styled.a`
 	text-decoration: none;
 	color: #f1f1f1;
 	display: block;
+	font-size: 18px;
 
 	&:hover {
 		color: #dddd;
 	}
 
 	@media (max-width: 768px) {
-		padding: 8px 16px;
+		padding: 10px 16px;
 		margin: 8px;
 	}
 `

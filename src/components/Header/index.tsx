@@ -24,7 +24,7 @@ const Header = () => {
 			<HeaderContainer>
 				<TitleLink href="#">
 					<HeaderIcon src="/favicon.png" alt="" />
-					<Title>Nícolas Medeiros</Title>
+					<Title as="h1">Nícolas Medeiros</Title>
 				</TitleLink>
 				<NavButton onClick={() => setIsVisible(!isVisible)}>Menu</NavButton>
 				<Navegation isVisible={isVisible}>

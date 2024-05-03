@@ -15,7 +15,7 @@ const AboutMe = () => (
 				<Image src="/profile-pic.jpg" alt="" />
 			</ImageContainer>
 			<TextContainer>
-				<Title>Sobre Mim</Title>
+				<Title as="h2">Sobre Mim</Title>
 				<Text>
 					Eu sou um estudante de Desenvolvimento Web Full stack na EBAC (Escola
 					Britânica de Artes Criativas e Tecnologia) onde estou aprendendo todas
