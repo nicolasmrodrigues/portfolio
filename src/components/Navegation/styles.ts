@@ -3,7 +3,9 @@ import { Props } from '.'
 
 export const Navegation = styled.nav<Props>`
 	@media (max-width: 768px) {
-		display: ${(props) => (props.isVisible ? 'block' : 'none')};
+		display: block;
+		visibility: ${(props) => (props.isVisible ? 'visible' : 'hidden')};
+		opacity: ${(props) => (props.isVisible ? '1' : '0')};
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -12,5 +14,6 @@ export const Navegation = styled.nav<Props>`
 		z-index: 2;
 		padding: 24px;
 		background-color: #28292e;
+		transition: all 0.25s ease;
 	}
 `
