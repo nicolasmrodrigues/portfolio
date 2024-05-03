@@ -3,12 +3,19 @@ import { Container } from '../../styles'
 
 export const Header = styled.header`
 	padding: 24px 0;
-	background-color: #353b48;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	position: sticky;
 	top: 0;
 	left: 0;
 	z-index: 1;
+	transition:
+		background-color linear 0.2s,
+		box-shadow linear 0.1s;
+
+	&.background {
+		background-color: rgb(53, 59, 72);
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	}
+
 	@media (max-width: 768px) {
 		direction: rtl;
 	}

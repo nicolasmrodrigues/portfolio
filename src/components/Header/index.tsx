@@ -12,10 +12,15 @@ import {
 } from './styles'
 
 const Header = () => {
-	const [isVisible, setIsVisible] = useState<boolean>(false)
+	const [isVisible, setIsVisible] = useState(false)
+	const [scroll, setScroll] = useState(0)
+
+	window.onscroll = () => {
+		setScroll(window.scrollY)
+	}
 
 	return (
-		<HeaderStyle>
+		<HeaderStyle className={scroll > 128 ? 'background' : ''}>
 			<HeaderContainer>
 				<TitleLink href="#">
 					<HeaderIcon src="/favicon.png" alt="" />
