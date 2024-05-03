@@ -110,7 +110,6 @@ export const TitleLink = styled.a`
 	align-items: center;
 	cursor: pointer;
 	text-decoration: none;
-	margin-right: 32px;
 `
 
 export const Overlay = styled.div`

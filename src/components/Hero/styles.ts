@@ -45,6 +45,10 @@ export const Subtitle = styled(Title)`
 	font-weight: 400;
 	letter-spacing: -1px;
 	text-align: center;
+
+	@media (max-width: 768px) {
+		font-size: 20px;
+	}
 `
 
 export const Container = styled.div`

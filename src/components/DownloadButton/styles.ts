@@ -6,7 +6,7 @@ export const Button = styled.a`
 	justify-content: center;
 
 	@media (max-width: 768px) {
-		margin: 32px 0 40px 0;
+		margin: 40px 0 48px 0;
 	}
 
 	.button {
