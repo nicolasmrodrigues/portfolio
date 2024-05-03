@@ -71,6 +71,8 @@ export const ListLink = styled.a`
 export const NavButton = styled.button`
 	display: none;
 	padding: 10px 16px;
+	font-size: 16px;
+	font-weight: 500;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;

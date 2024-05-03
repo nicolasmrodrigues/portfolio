@@ -1,7 +1,7 @@
 import { Navegation as NavegationStyle } from './styles'
 
 export type Props = {
-	children?: unknown
+	children?: JSX.Element
 	isVisible: boolean
 }
 

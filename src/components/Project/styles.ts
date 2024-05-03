@@ -7,7 +7,7 @@ export const Project = styled.li`
 	border-radius: 8px;
 	display: grid;
   grid-auto-rows: 240px 32px auto 50px;
-	max-width: 384px;
+	flex: 1;
 
 	@media (max-width: 768px) {
 		height: 696px;
