@@ -24,8 +24,7 @@ const Skills = () => {
 		'styledcomponents',
 		'python',
 		'jest',
-		'cypress',
-		'nodejs'
+		'cypress'
 	]
 
 	const formatSkill = (skill: string) => {

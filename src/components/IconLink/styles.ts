@@ -3,15 +3,19 @@ import styled from 'styled-components'
 export const Icon = styled.a`
 	display: block;
 	transition: all linear 0.1s;
+	text-decoration: none;
+	color: #f1f1f1;
 
 	&,
 	img {
-		width: 80px;
-		height: 80px;
+		width: 90px;
+		height: 90px;
+		user-select: none;
+		border-radius: 50%;
 
 		@media (max-width: 768px) {
-			width: 65px;
-			height: 65px;
+			width: 75px;
+			height: 75px;
 		}
 	}
 

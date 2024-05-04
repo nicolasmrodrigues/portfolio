@@ -50,6 +50,10 @@ export const List = styled.ul`
 		height: 88%;
 		padding-top: 8px;
 	}
+
+	li {
+		user-select: none;
+	}
 `
 
 export const ListLink = styled.a`
