@@ -11,12 +11,14 @@ export const Project = styled.li`
 	max-width: 395px;
   min-width: 338px;
 
+	${Title} {
+		font-size: 24px;
+	}
+
 	@media (max-width: 768px) {
 		height: 696px;
+		padding: 16px;
 
-		${Title} {
-			font-size: 24px;
-		}
 	}
 }
 `

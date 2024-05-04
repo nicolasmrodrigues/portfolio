@@ -14,6 +14,7 @@ export const AboutMeContainer = styled.div`
 
 	@media (max-width: 768px) {
 		display: block;
+		padding: 24px 16px 16px 16px;
 	}
 `
 
@@ -31,8 +32,8 @@ export const TextContainer = styled.div`
 	max-width: 700px;
 	width: 100%;
 
-	${Title} {
-		@media (max-width: 768px) {
+	@media (max-width: 768px) {
+		${Title} {
 			text-align: center;
 		}
 	}
