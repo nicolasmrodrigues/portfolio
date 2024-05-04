@@ -10,7 +10,6 @@ export const Icon = styled.a`
 	img {
 		width: 90px;
 		height: 90px;
-		user-select: none;
 		border-radius: 50%;
 
 		@media (max-width: 768px) {

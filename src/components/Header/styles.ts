@@ -51,7 +51,7 @@ export const List = styled.ul`
 		padding-top: 8px;
 	}
 
-	li {
+	* {
 		user-select: none;
 	}
 `

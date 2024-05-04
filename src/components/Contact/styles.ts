@@ -12,6 +12,6 @@ export const IconsList = styled.ul`
 
 	@media (max-width: 768px) {
 		margin: 0;
-		gap: 16px;
+		gap: 24px;
 	}
 `
