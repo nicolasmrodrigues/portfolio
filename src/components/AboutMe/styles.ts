@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Title } from '../Title/styles'
 
 export const AboutMe = styled.section`
 	padding-top: 136px;
@@ -29,6 +30,12 @@ export const Image = styled.img`
 export const TextContainer = styled.div`
 	max-width: 700px;
 	width: 100%;
+
+	${Title} {
+		@media (max-width: 768px) {
+			text-align: center;
+		}
+	}
 `
 
 export const ImageContainer = styled.div`

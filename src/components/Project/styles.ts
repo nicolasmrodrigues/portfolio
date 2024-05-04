@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Title } from '../Title/styles'
 
 export const Project = styled.li`
 	padding: 24px;
@@ -12,6 +13,10 @@ export const Project = styled.li`
 
 	@media (max-width: 768px) {
 		height: 696px;
+
+		${Title} {
+			font-size: 24px;
+		}
 	}
 }
 `
