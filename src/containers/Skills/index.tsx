@@ -16,11 +16,16 @@ const Skills = () => {
 		'vue',
 		'react',
 		'redux',
+		'babel',
+		'npm',
 		'gulp',
 		'sass',
 		'less',
 		'styledcomponents',
-		'python'
+		'python',
+		'jest',
+		'cypress',
+		'nodejs'
 	]
 
 	const formatSkill = (skill: string) => {

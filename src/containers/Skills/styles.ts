@@ -5,7 +5,11 @@ export const Skills = styled.section`
 `
 
 export const SkillsList = styled.ul`
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+	gap: 32px;
+
+	@media (max-width: 768px) {
+		gap: 0;
+	}
 `
