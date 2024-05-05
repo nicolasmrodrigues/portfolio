@@ -18,6 +18,7 @@ const Header = () => {
 
 	window.onscroll = () => {
 		setScroll(window.scrollY)
+		console.log(window.scrollY)
 	}
 
 	const changeNavVisibility = () => {
@@ -25,7 +26,7 @@ const Header = () => {
 	}
 
 	return (
-		<HeaderStyle className={scroll > 128 ? 'background' : ''}>
+		<HeaderStyle scroll={scroll}>
 			<HeaderContainer>
 				<TitleLink href="#">
 					<HeaderIcon src="/favicon.png" alt="" />

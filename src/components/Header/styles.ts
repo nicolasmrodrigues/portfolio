@@ -1,7 +1,11 @@
 import styled from 'styled-components'
 import { Container } from '../../styles'
 
-export const Header = styled.header`
+type HeaderProps = {
+	scroll: number
+}
+
+export const Header = styled.header<HeaderProps>`
 	padding: 24px 0;
 	position: sticky;
 	top: 0;
@@ -11,13 +15,16 @@ export const Header = styled.header`
 		background-color linear 0.2s,
 		box-shadow linear 0.1s;
 
-	&.background {
-		background-color: rgb(53, 59, 72);
-		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	}
+	background-color: ${(props) => (props.scroll > 128 ? 'rgb(53, 59, 72)' : '')};
+	box-shadow: ${(props) =>
+		props.scroll > 128 ? 'rgba(0, 0, 0, 0.35) 0px 5px 15px' : ''};
 
 	@media (max-width: 768px) {
 		direction: rtl;
+		background-color: ${(props) =>
+			props.scroll > 60 ? 'rgb(53, 59, 72)' : ''};
+		box-shadow: ${(props) =>
+			props.scroll > 60 ? 'rgba(0, 0, 0, 0.35) 0px 5px 15px' : ''};
 	}
 `
 
