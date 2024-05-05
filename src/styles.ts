@@ -17,6 +17,10 @@ const GlobalStyle = createGlobalStyle`
 	html {
 		scroll-behavior: smooth;
 	}
+
+	a {
+    -webkit-tap-highlight-color: transparent;
+	}
 `
 
 export const Container = styled.div`

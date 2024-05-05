@@ -12,10 +12,6 @@ export const SkillsList = styled.ul`
 	margin: 32px auto 0 auto;
 	max-width: 943px;
 
-	* {
-		user-select: none;
-	}
-
 	@media (max-width: 768px) {
 		row-gap: 32px;
 		column-gap: 0;
