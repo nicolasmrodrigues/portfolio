@@ -13,8 +13,8 @@ export const Icon = styled.a`
 		border-radius: 50%;
 
 		@media (max-width: 768px) {
-			width: 75px;
-			height: 75px;
+			width: 70px;
+			height: 70px;
 		}
 	}
 
