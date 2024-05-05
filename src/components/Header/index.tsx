@@ -18,7 +18,6 @@ const Header = () => {
 
 	window.onscroll = () => {
 		setScroll(window.scrollY)
-		console.log(window.scrollY)
 	}
 
 	const changeNavVisibility = () => {
