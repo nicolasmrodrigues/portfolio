@@ -1,13 +1,11 @@
 import styled from 'styled-components'
 
 export const Icon = styled.a`
-	display: block;
+	display: flex;
 	transition: all linear 0.1s;
-	text-decoration: none;
-	color: #f1f1f1;
 
-	&,
-	img {
+	img,
+	.skeleton {
 		width: 90px;
 		height: 90px;
 		border-radius: 50%;

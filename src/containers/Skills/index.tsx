@@ -6,8 +6,9 @@ const Skills = () => {
 	const skills = [
 		'html',
 		'css',
-		'js',
+		'javascript',
 		'jquery',
+		'typescript',
 		'bootstrap',
 		'git',
 		'github',
@@ -17,7 +18,6 @@ const Skills = () => {
 		'react',
 		'redux',
 		'babel',
-		'npm',
 		'gulp',
 		'sass',
 		'less',
@@ -28,9 +28,9 @@ const Skills = () => {
 	]
 
 	const formatSkill = (skill: string) => {
-		if (skill === 'js') return 'Javascript'
 		if (skill === 'css') return 'CSS'
 		if (skill === 'html') return 'HTML'
+		if (skill === 'jquery') return 'jQuery'
 		if (skill === 'styledcomponents') return 'Styled components'
 
 		return skill[0].toUpperCase() + skill.substring(1)
@@ -47,8 +47,7 @@ const Skills = () => {
 						<Icon
 							href={`https://www.google.com/search?&q=${formatSkill(skill)}`}
 							title={`Clique para pesquisar sobre: ${formatSkill(skill)}`}
-							src={`https://skillicons.dev/icons?theme=light&i=${skill}`}
-							alt={`Logo de ${formatSkill(skill)}`}
+							src={`/src/assets/images/skill-icons/${skill}.svg`}
 						></Icon>
 					</li>
 				))}

@@ -103,21 +103,31 @@ export const NavButton = styled.button`
 	}
 `
 
-export const HeaderIcon = styled.img`
-	margin-right: 32px;
-
-	@media (max-width: 768px) {
-		width: 32px;
-		margin-right: 0;
-		margin-left: 16px;
-	}
-`
-
 export const TitleLink = styled.a`
 	display: flex;
 	align-items: center;
 	cursor: pointer;
 	text-decoration: none;
+
+	img,
+	div {
+		margin-right: 32px;
+		width: 64px;
+		height: 64px;
+		border-radius: 8px;
+
+		svg {
+			width: 20px;
+			height: 20px;
+		}
+
+		@media (max-width: 768px) {
+			width: 32px;
+			height: 32px;
+			margin-right: 0;
+			margin-left: 16px;
+		}
+	}
 `
 
 export const Overlay = styled.div`

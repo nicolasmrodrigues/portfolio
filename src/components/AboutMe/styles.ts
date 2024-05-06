@@ -18,16 +18,6 @@ export const AboutMeContainer = styled.div`
 	}
 `
 
-export const Image = styled.img`
-	width: auto;
-	height: 350px;
-	border-radius: 50%;
-
-	@media (max-width: 768px) {
-		height: 168px;
-	}
-`
-
 export const TextContainer = styled.div`
 	max-width: 700px;
 	width: 100%;
@@ -40,6 +30,19 @@ export const TextContainer = styled.div`
 `
 
 export const ImageContainer = styled.div`
-	text-align: center;
+	display: flex;
+	justify-content: center;
 	margin-bottom: 32px;
+
+	img,
+	.skeleton {
+		width: 355px;
+		height: 350px;
+		border-radius: 50%;
+
+		@media (max-width: 768px) {
+			width: 170px;
+			height: 168px;
+		}
+	}
 `

@@ -8,24 +8,30 @@ const Contact = () => (
 			Entre em Contato
 		</Title>
 		<IconsList>
-			<Icon
-				href="mailto:nicolasmedeiros090@gmail.com"
-				src="https://skillicons.dev/icons?theme=light&i=gmail"
-				title="Clique para me enviar um email"
-				alt="Logo do Gmail"
-			/>
-			<Icon
-				href="https://www.linkedin.com/in/nicolasmrodrigues/"
-				src="https://skillicons.dev/icons?i=linkedin"
-				title="Clique para acessar meu LinkedIn"
-				alt="Logo do LinkedIn"
-			/>
-			<Icon
-				href="https://github.com/nicolasmrodrigues"
-				src="https://skillicons.dev/icons?theme=light&i=github"
-				title="Clique para acessar meu GitHub"
-				alt="Logo do GitHub"
-			/>
+			<li>
+				<Icon
+					href="mailto:nicolasmedeiros090@gmail.com"
+					src="/src/assets/images/media-icons/gmail.svg"
+					title="Clique para me enviar um email"
+					alt="Logo do Gmail"
+				/>
+			</li>
+			<li>
+				<Icon
+					href="https://www.linkedin.com/in/nicolasmrodrigues/"
+					src="/src/assets/images/media-icons/linkedin.svg"
+					title="Clique para acessar meu LinkedIn"
+					alt="Logo do LinkedIn"
+				/>
+			</li>
+			<li>
+				<Icon
+					href="https://github.com/nicolasmrodrigues"
+					src="/src/assets/images/media-icons/github.svg"
+					title="Clique para acessar meu GitHub"
+					alt="Logo do GitHub"
+				/>
+			</li>
 		</IconsList>
 	</ContactStyle>
 )

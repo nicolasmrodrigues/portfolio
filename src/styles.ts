@@ -21,6 +21,10 @@ const GlobalStyle = createGlobalStyle`
 	a {
     -webkit-tap-highlight-color: transparent;
 	}
+
+	.loading {
+		display: none;
+	}
 `
 
 export const Container = styled.div`

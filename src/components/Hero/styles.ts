@@ -6,10 +6,28 @@ export const Hero = styled.div`
 	display: flex;
 	justify-content: space-between;
 
+	img, .skeleton {
+		width: 363px;
+		height: 283px;
+		border-radius: 8px;
+	}
+
+
 	@media (max-width: 768px) {
 		display: block;
 		text-align: center;
+		justify-content: center;
 		margin-top: 56px;
+
+		.skeleton {
+			display: inline-flex;
+		}
+
+		img, .skeleton {
+			height: 152px;
+			width: 195px;
+			margin-top: 32px;
+		}
 	}
 }
 `
@@ -53,11 +71,4 @@ export const Subtitle = styled(Title)`
 
 export const Container = styled.div`
 	align-self: center;
-`
-
-export const Image = styled.img`
-	@media (max-width: 768px) {
-		height: 152px;
-		margin-top: 32px;
-	}
 `

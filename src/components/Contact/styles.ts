@@ -5,7 +5,8 @@ export const Contact = styled.section`
 `
 
 export const IconsList = styled.ul`
-	display: flex;
+	display: grid;
+	grid-template-columns: 100px 100px 100px;
 	justify-content: center;
 	gap: 40px;
 	margin-top: 32px;

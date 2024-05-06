@@ -11,6 +11,23 @@ export const Project = styled.li`
 	max-width: 395px;
   min-width: 338px;
 
+	img, .skeleton {
+		width: 100%;
+		max-height: 216px;
+		height: 100%;
+		border-radius: 8px;
+		margin-bottom: 24px;
+
+		@media (max-width: 768px) {
+			margin-bottom: 16px;
+		}
+	}
+
+	.skeleton {
+		border-radius: none;
+
+	}
+
 	${Title} {
 		font-size: 24px;
 	}
@@ -23,25 +40,20 @@ export const Project = styled.li`
 }
 `
 
-export const ProjectImage = styled.img`
-	width: 100%;
-	max-height: 216px;
-	height: 100%;
-	border-radius: 8px;
-	margin-bottom: 24px;
-
-	@media (max-width: 768px) {
-		margin-bottom: 16px;
-	}
-`
-
 export const ProjectLinksContainer = styled.div`
 	display: flex;
 	justify-content: space-between;
 `
 
-export const ProjectLink = styled.a`
+type Props = {
+	size: 'small' | 'big'
+}
+
+export const ProjectLink = styled.a<Props>`
 	padding: 16px;
+	width: ${(props) => (props.size === 'small' ? '85px' : '121px')};
+	height: 50px;
+	margin-top: 8px;
 	text-align: center;
 	border-radius: 8px;
 	background-color: #5b6778;

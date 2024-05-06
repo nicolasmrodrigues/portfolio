@@ -8,13 +8,15 @@ import {
 	ListLink,
 	NavButton,
 	TitleLink,
-	HeaderIcon,
 	Overlay
 } from './styles'
+import { removeSkeleton } from '../../utils'
+import Skeleton from '../Skeleton'
 
 const Header = () => {
 	const [isVisible, setIsVisible] = useState(false)
 	const [scroll, setScroll] = useState(0)
+	const [isLoading, setIsLoading] = useState(true)
 
 	window.onscroll = () => {
 		setScroll(window.scrollY)
@@ -28,7 +30,13 @@ const Header = () => {
 		<HeaderStyle scroll={scroll}>
 			<HeaderContainer>
 				<TitleLink href="#">
-					<HeaderIcon src="/favicon.png" alt="" />
+					<img
+						src="/favicon.png"
+						alt=""
+						onLoad={() => removeSkeleton(setIsLoading)}
+						className="loading"
+					/>
+					{isLoading && <Skeleton />}
 					<Title as="h1">Nícolas Medeiros</Title>
 				</TitleLink>
 				<NavButton onClick={changeNavVisibility}>Menu</NavButton>
