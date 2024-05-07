@@ -4,7 +4,7 @@ import { Projects as ProjectsStyle, ProjectsList } from './styles'
 
 const Projects = () => (
 	<ProjectsStyle id="projects">
-		<Title as="h2" alignment="center">
+		<Title as="h2" $alignment="center">
 			Projetos
 		</Title>
 		<ProjectsList>

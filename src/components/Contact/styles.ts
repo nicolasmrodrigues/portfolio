@@ -12,7 +12,7 @@ export const IconsList = styled.ul`
 	margin-top: 32px;
 
 	@media (max-width: 768px) {
-		margin: 0;
-		gap: 24px;
+		margin: 32px 0 0 0;
+		gap: 8px;
 	}
 `

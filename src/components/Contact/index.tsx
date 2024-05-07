@@ -4,7 +4,7 @@ import { Contact as ContactStyle, IconsList } from './styles'
 
 const Contact = () => (
 	<ContactStyle id="contact">
-		<Title as="h2" alignment="center">
+		<Title as="h2" $alignment="center">
 			Entre em Contato
 		</Title>
 		<IconsList>

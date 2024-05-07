@@ -38,7 +38,7 @@ const Skills = () => {
 
 	return (
 		<SkillsStyle id="skills">
-			<Title as="h2" alignment="center">
+			<Title as="h2" $alignment="center">
 				Minhas Habilidades
 			</Title>
 			<SkillsList>

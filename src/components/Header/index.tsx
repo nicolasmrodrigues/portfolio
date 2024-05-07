@@ -27,7 +27,7 @@ const Header = () => {
 	}
 
 	return (
-		<HeaderStyle scroll={scroll}>
+		<HeaderStyle $scroll={scroll}>
 			<HeaderContainer>
 				<TitleLink href="#">
 					<img
@@ -41,7 +41,7 @@ const Header = () => {
 					<Title as="h1">Nícolas Medeiros</Title>
 				</TitleLink>
 				<NavButton onClick={changeNavVisibility}>Menu</NavButton>
-				<Navegation isVisible={isVisible}>
+				<Navegation $isVisible={isVisible}>
 					<>
 						<Overlay onClick={changeNavVisibility} />
 						<div>
