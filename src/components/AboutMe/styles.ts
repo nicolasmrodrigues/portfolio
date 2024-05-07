@@ -33,11 +33,13 @@ export const ImageContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	margin-bottom: 32px;
+	width: 355px;
+	height: 350px;
 
 	img,
 	.skeleton {
-		width: 355px;
-		height: 350px;
+		width: 100%;
+		height: 100%;
 		border-radius: 50%;
 
 		@media (max-width: 768px) {
