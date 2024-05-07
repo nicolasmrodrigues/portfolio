@@ -6,13 +6,13 @@ export const Skills = styled.section`
 
 export const SkillsList = styled.ul`
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-	gap: 32px;
-	justify-items: center;
+	grid-template-columns: repeat(auto-fit, 90px);
+	gap: 32px 48px;
 	margin: 32px auto 0 auto;
-	max-width: 943px;
+	max-width: 918px;
 
 	@media (max-width: 768px) {
-		gap: 32px 0;
+		grid-template-columns: repeat(auto-fit, 70px);
+		justify-content: center;
 	}
 `
