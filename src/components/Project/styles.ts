@@ -33,6 +33,7 @@ export const Project = styled.li`
 
 	@media (max-width: 768px) {
 		padding: 16px;
+		grid-template-rows: 240px 32px auto 74px;
 
 	}
 }
@@ -56,6 +57,10 @@ export const ProjectLink = styled.a`
 	transition: all linear 0.1s;
 	text-decoration: none;
 	color: #000;
+
+	@media (max-width: 768px) {
+		margin-top: 24px;
+	}
 
 	&:hover {
 		transform: scale(1.04);
