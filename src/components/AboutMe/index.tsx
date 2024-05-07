@@ -7,18 +7,20 @@ import {
 import Title from '../Title'
 import Text from '../Text'
 import { useState } from 'react'
-import { removeSkeleton } from '../../utils'
 import Skeleton from '../Skeleton'
+import { removeSkeleton } from '../../utils'
 
 const AboutMe = () => {
 	const [isLoading, setIsLoading] = useState(true)
+
 	return (
 		<AboutMeStyle id="aboutMe">
 			<AboutMeContainer>
 				<ImageContainer>
 					<img
+						id="profile-pic"
 						src="/profile-pic.webp"
-						onLoad={() => removeSkeleton(setIsLoading)}
+						onLoad={() => removeSkeleton(setIsLoading, 'profile-pic')}
 						className="loading"
 					/>
 				</ImageContainer>

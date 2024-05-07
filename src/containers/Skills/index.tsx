@@ -45,6 +45,7 @@ const Skills = () => {
 				{skills.map((skill, index) => (
 					<li key={index}>
 						<Icon
+							id={skill}
 							href={`https://www.google.com/search?&q=${formatSkill(skill)}`}
 							title={`Clique para pesquisar sobre: ${formatSkill(skill)}`}
 							src={`/skill-icons/${skill}.svg`}
