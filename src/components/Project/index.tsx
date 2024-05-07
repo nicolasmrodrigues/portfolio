@@ -37,10 +37,10 @@ const Project = ({
 			<Title as="h3">{title}</Title>
 			<Text>{description}</Text>
 			<ProjectLinksContainer>
-				<ProjectLink size="small" href={deployLink} target="_blank">
+				<ProjectLink href={deployLink} target="_blank">
 					Deploy
 				</ProjectLink>
-				<ProjectLink size="big" href={repoLink} target="_blank">
+				<ProjectLink href={repoLink} target="_blank">
 					Repositório
 				</ProjectLink>
 			</ProjectLinksContainer>

@@ -6,7 +6,7 @@ export const Project = styled.li`
 	background-color: #202429;
 	border-radius: 8px;
 	display: grid;
-  grid-auto-rows: 240px 32px auto 50px;
+  grid-template-rows: 240px 32px auto 66px;
 	flex: 1;
 	max-width: 395px;
   min-width: 338px;
@@ -16,7 +16,6 @@ export const Project = styled.li`
 		max-height: 216px;
 		height: 100%;
 		border-radius: 8px;
-		margin-bottom: 24px;
 
 		@media (max-width: 768px) {
 			margin-bottom: 16px;
@@ -33,7 +32,6 @@ export const Project = styled.li`
 	}
 
 	@media (max-width: 768px) {
-		height: 696px;
 		padding: 16px;
 
 	}
@@ -45,15 +43,10 @@ export const ProjectLinksContainer = styled.div`
 	justify-content: space-between;
 `
 
-type Props = {
-	size: 'small' | 'big'
-}
-
-export const ProjectLink = styled.a<Props>`
+export const ProjectLink = styled.a`
 	padding: 16px;
-	width: ${(props) => (props.size === 'small' ? '85px' : '121px')};
 	height: 50px;
-	margin-top: 8px;
+	margin-top: 16px;
 	text-align: center;
 	border-radius: 8px;
 	background-color: #5b6778;
