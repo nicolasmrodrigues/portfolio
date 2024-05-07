@@ -17,10 +17,11 @@ const Hero = () => {
 				</Container>
 				<Container>
 					<img
+						id="computers"
 						src="/computers.webp"
 						alt=""
 						className="loading"
-						onLoad={() => removeSkeleton(setIsLoading)}
+						onLoad={() => removeSkeleton(setIsLoading, 'computers')}
 					/>
 					{isLoading && <Skeleton />}
 				</Container>

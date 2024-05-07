@@ -31,9 +31,10 @@ const Header = () => {
 			<HeaderContainer>
 				<TitleLink href="#">
 					<img
+						id="favicon"
 						src="/favicon.png"
 						alt=""
-						onLoad={() => removeSkeleton(setIsLoading)}
+						onLoad={() => removeSkeleton(setIsLoading, 'favicon')}
 						className="loading"
 					/>
 					{isLoading && <Skeleton />}
