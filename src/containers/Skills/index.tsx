@@ -47,7 +47,7 @@ const Skills = () => {
 						<Icon
 							href={`https://www.google.com/search?&q=${formatSkill(skill)}`}
 							title={`Clique para pesquisar sobre: ${formatSkill(skill)}`}
-							src={`/src/assets/images/skill-icons/${skill}.svg`}
+							src={`/skill-icons/${skill}.svg`}
 						></Icon>
 					</li>
 				))}

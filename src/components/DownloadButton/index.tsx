@@ -1,8 +1,9 @@
 import { Button as ButtonStyle } from './styles'
-import cv from '../../assets/CV-Nicolas Medeiros Rodrigues.pdf'
-
 const Button = () => (
-	<ButtonStyle href={cv} download="CV-Nícolas Medeiros Rodrigues">
+	<ButtonStyle
+		href="/downloads/CV-Nicolas-Medeiros-Rodrigues.pdf"
+		download="CV-Nícolas Medeiros Rodrigues"
+	>
 		<div className="button" data-tooltip="Tamanho: 87KB">
 			<div className="button-wrapper">
 				<div className="text">Download CV</div>
