@@ -23,8 +23,8 @@ const AboutMe = () => {
 						onLoad={() => removeSkeleton(setIsLoading, 'profile-pic')}
 						className="loading"
 					/>
+					{isLoading && <Skeleton />}
 				</ImageContainer>
-				{isLoading && <Skeleton />}
 				<TextContainer>
 					<Title as="h2">Sobre Mim</Title>
 					<Text>
