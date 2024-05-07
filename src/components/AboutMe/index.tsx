@@ -17,12 +17,12 @@ const AboutMe = () => {
 			<AboutMeContainer>
 				<ImageContainer>
 					<img
-						src="/profile-pic.jpg"
+						src="/profile-pic.webp"
 						onLoad={() => removeSkeleton(setIsLoading)}
 						className="loading"
 					/>
-					{isLoading && <Skeleton />}
 				</ImageContainer>
+				{isLoading && <Skeleton />}
 				<TextContainer>
 					<Title as="h2">Sobre Mim</Title>
 					<Text>

@@ -17,7 +17,7 @@ const Hero = () => {
 				</Container>
 				<Container>
 					<img
-						src="/computers.png"
+						src="/computers.webp"
 						alt=""
 						className="loading"
 						onLoad={() => removeSkeleton(setIsLoading)}
