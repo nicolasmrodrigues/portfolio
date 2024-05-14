@@ -5,6 +5,7 @@ export const Hero = styled.div`
 	margin-top: 136px;
 	display: flex;
 	justify-content: space-between;
+	text-align: center;
 
 	img, .skeleton {
 		width: 363px;
@@ -15,7 +16,6 @@ export const Hero = styled.div`
 
 	@media (max-width: 768px) {
 		display: block;
-		text-align: center;
 		justify-content: center;
 		margin-top: 56px;
 
