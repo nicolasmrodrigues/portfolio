@@ -1,8 +1,8 @@
 export const removeSkeleton = (
-	setIsLoading: React.Dispatch<React.SetStateAction<boolean>>
+	setIsLoading: React.Dispatch<React.SetStateAction<boolean>>,
+	elementId: string
 ) => {
-	const imgs = document.getElementsByClassName('loading')
-	imgs.item(0)?.removeAttribute('class')
+	document.getElementById(elementId)?.removeAttribute('class')
 
 	setIsLoading(false)
 }

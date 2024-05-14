@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Container } from '../../styles'
 
 type HeaderProps = {
-	scroll: number
+	$scroll: number
 }
 
 export const Header = styled.header<HeaderProps>`
@@ -15,16 +15,17 @@ export const Header = styled.header<HeaderProps>`
 		background-color linear 0.2s,
 		box-shadow linear 0.1s;
 
-	background-color: ${(props) => (props.scroll > 128 ? 'rgb(53, 59, 72)' : '')};
+	background-color: ${(props) =>
+		props.$scroll > 128 ? 'rgb(53, 59, 72)' : ''};
 	box-shadow: ${(props) =>
-		props.scroll > 128 ? 'rgba(0, 0, 0, 0.35) 0px 5px 15px' : ''};
+		props.$scroll > 128 ? 'rgba(0, 0, 0, 0.35) 0px 5px 15px' : ''};
 
 	@media (max-width: 768px) {
 		direction: rtl;
 		background-color: ${(props) =>
-			props.scroll > 60 ? 'rgb(53, 59, 72)' : ''};
+			props.$scroll > 60 ? 'rgb(53, 59, 72)' : ''};
 		box-shadow: ${(props) =>
-			props.scroll > 60 ? 'rgba(0, 0, 0, 0.35) 0px 5px 15px' : ''};
+			props.$scroll > 60 ? 'rgba(0, 0, 0, 0.35) 0px 5px 15px' : ''};
 	}
 `
 

@@ -32,17 +32,23 @@ export const TextContainer = styled.div`
 export const ImageContainer = styled.div`
 	display: flex;
 	justify-content: center;
-	margin-bottom: 32px;
+	margin: 0 auto 32px auto;
 	width: 355px;
 	height: 350px;
 
 	img,
 	.skeleton {
-		width: 100%;
-		height: 100%;
+		width: 355px;
+		height: 350px;
 		border-radius: 50%;
+	}
 
-		@media (max-width: 768px) {
+	@media (max-width: 768px) {
+		width: 170px;
+		height: 168px;
+
+		img,
+		.skeleton {
 			width: 170px;
 			height: 168px;
 		}

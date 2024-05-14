@@ -27,20 +27,21 @@ const Header = () => {
 	}
 
 	return (
-		<HeaderStyle scroll={scroll}>
+		<HeaderStyle $scroll={scroll}>
 			<HeaderContainer>
 				<TitleLink href="#">
 					<img
+						id="favicon"
 						src="/favicon.png"
 						alt=""
-						onLoad={() => removeSkeleton(setIsLoading)}
+						onLoad={() => removeSkeleton(setIsLoading, 'favicon')}
 						className="loading"
 					/>
 					{isLoading && <Skeleton />}
 					<Title as="h1">Nícolas Medeiros</Title>
 				</TitleLink>
 				<NavButton onClick={changeNavVisibility}>Menu</NavButton>
-				<Navegation isVisible={isVisible}>
+				<Navegation $isVisible={isVisible}>
 					<>
 						<Overlay onClick={changeNavVisibility} />
 						<div>

@@ -4,12 +4,13 @@ import { Contact as ContactStyle, IconsList } from './styles'
 
 const Contact = () => (
 	<ContactStyle id="contact">
-		<Title as="h2" alignment="center">
+		<Title as="h2" $alignment="center">
 			Entre em Contato
 		</Title>
 		<IconsList>
 			<li>
 				<Icon
+					id="gmail"
 					href="mailto:nicolasmedeiros090@gmail.com"
 					src="/media-icons/gmail.svg"
 					title="Clique para me enviar um email"
@@ -18,6 +19,7 @@ const Contact = () => (
 			</li>
 			<li>
 				<Icon
+					id="linkedin"
 					href="https://www.linkedin.com/in/nicolasmrodrigues/"
 					src="/media-icons/linkedin.svg"
 					title="Clique para acessar meu LinkedIn"
@@ -26,6 +28,7 @@ const Contact = () => (
 			</li>
 			<li>
 				<Icon
+					id="github-media"
 					href="https://github.com/nicolasmrodrigues"
 					src="/media-icons/github.svg"
 					title="Clique para acessar meu GitHub"

@@ -29,8 +29,9 @@ const Project = ({
 	return (
 		<ProjectStyle>
 			<img
+				id={title}
 				src={imageLink}
-				onLoad={() => removeSkeleton(setIsLoading)}
+				onLoad={() => removeSkeleton(setIsLoading, title)}
 				className="loading"
 			/>
 			{isLoading && <Skeleton />}
