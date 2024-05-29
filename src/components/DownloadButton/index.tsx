@@ -4,8 +4,9 @@ const Button = () => (
 	<ButtonStyle
 		href="/downloads/CV-Nicolas-Medeiros-Rodrigues.pdf"
 		download="CV-Nícolas Medeiros Rodrigues"
+		role="button"
 	>
-		<div className="button" data-tooltip="Tamanho: 87KB">
+		<div className="button" data-tooltip="Clique aqui">
 			<div className="button-wrapper">
 				<div className="text">Download CV</div>
 				<span className="icon">
