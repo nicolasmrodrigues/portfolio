@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Title } from '../Title/styles'
+import { Title } from '../../components/Title/styles'
 
 export const AboutMe = styled.section`
 	padding-top: 136px;

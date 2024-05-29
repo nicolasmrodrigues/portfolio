@@ -10,17 +10,15 @@ export const Button = styled.a`
 	}
 
 	.button {
-		--width: 125px;
 		--height: 45px;
 		--tooltip-height: 35px;
 		--tooltip-width: 120px;
 		--gap-between-tooltip-to-button: 18px;
-		--button-color: #1163ff;
 		--tooltip-color: #fff;
-		width: var(--width);
+		width: 125px;
 		cursor: pointer;
 		height: var(--height);
-		background: var(--button-color);
+		background: #1163ff;
 		position: relative;
 		text-align: center;
 		border-radius: 0.45em;

@@ -1,9 +1,5 @@
 import styled from 'styled-components'
 
-export const Contact = styled.section`
-	padding-top: 136px;
-`
-
 export const IconsList = styled.ul`
 	display: grid;
 	grid-template-columns: 90px 90px 90px;

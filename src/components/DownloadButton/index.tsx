@@ -1,4 +1,5 @@
 import { Button as ButtonStyle } from './styles'
+
 const Button = () => (
 	<ButtonStyle
 		href="/downloads/CV-Nicolas-Medeiros-Rodrigues.pdf"

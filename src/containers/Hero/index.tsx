@@ -1,10 +1,10 @@
 import { IconContext } from 'react-icons'
 import { FaArrowDown } from 'react-icons/fa'
 import { Container, Hero as HeroStyle, IconLink, Subtitle } from './styles'
-import DownloadButton from '../DownloadButton'
+import DownloadButton from '../../components/DownloadButton'
 import { useState } from 'react'
 import { removeSkeleton } from '../../utils'
-import Skeleton from '../Skeleton'
+import Skeleton from '../../components/Skeleton'
 const Hero = () => {
 	const [isLoading, setIsLoading] = useState(true)
 	return (

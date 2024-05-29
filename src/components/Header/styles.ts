@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Container } from '../../styles'
+import { Container as BaseContainer } from '../../styles'
 
 type HeaderProps = {
 	$scroll: number
@@ -29,7 +29,7 @@ export const Header = styled.header<HeaderProps>`
 	}
 `
 
-export const HeaderContainer = styled(Container)`
+export const Container = styled(BaseContainer)`
 	display: flex;
 	justify-content: space-between;
 	align-itens center;

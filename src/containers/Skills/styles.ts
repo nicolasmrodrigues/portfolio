@@ -1,9 +1,5 @@
 import styled from 'styled-components'
 
-export const Skills = styled.section`
-	padding-top: 136px;
-`
-
 export const SkillsList = styled.ul`
 	display: grid;
 	grid-template-columns: repeat(auto-fit, 90px);

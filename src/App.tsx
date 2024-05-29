@@ -1,18 +1,20 @@
-import GlobalStyle, { Container } from './styles'
 import Header from './components/Header'
-import Hero from './components/Hero'
-import AboutMe from './components/AboutMe/'
+import Footer from './components/Footer'
+
+import Hero from './containers/Hero'
+import AboutMe from './containers/AboutMe'
 import Skills from './containers/Skills'
 import Projects from './containers/Projects'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import Contact from './containers/Contact'
+
+import GlobalStyle, { Container } from './styles'
 
 function App() {
 	return (
 		<>
 			<GlobalStyle />
 			<Header />
-			<Container>
+			<Container as="main">
 				<Hero />
 				<AboutMe />
 				<Skills />

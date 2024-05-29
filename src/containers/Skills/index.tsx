@@ -1,6 +1,6 @@
-import { SkillsList, Skills as SkillsStyle } from './styles'
-import Title from '../../components/Title'
+import { SkillsList } from './styles'
 import Icon from '../../components/IconLink'
+import Section from '../../components/Section'
 
 const Skills = () => {
 	const skills = [
@@ -37,23 +37,22 @@ const Skills = () => {
 	}
 
 	return (
-		<SkillsStyle id="skills">
-			<Title as="h2" $alignment="center">
-				Minhas Habilidades
-			</Title>
-			<SkillsList>
-				{skills.map((skill, index) => (
-					<li key={index}>
-						<Icon
-							id={skill}
-							href={`https://www.google.com/search?&q=${formatSkill(skill)}`}
-							title={`Clique para pesquisar sobre: ${formatSkill(skill)}`}
-							src={`/skill-icons/${skill}.svg`}
-						></Icon>
-					</li>
-				))}
-			</SkillsList>
-		</SkillsStyle>
+		<Section title="Minhas Habilidades" id="skills">
+			<>
+				<SkillsList>
+					{skills.map((skill, index) => (
+						<li key={index}>
+							<Icon
+								id={skill}
+								href={`https://www.google.com/search?&q=${formatSkill(skill)}`}
+								title={`Clique para pesquisar sobre: ${formatSkill(skill)}`}
+								src={`/skill-icons/${skill}.svg`}
+							></Icon>
+						</li>
+					))}
+				</SkillsList>
+			</>
+		</Section>
 	)
 }
 

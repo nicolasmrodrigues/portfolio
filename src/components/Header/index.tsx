@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Navegation from '../Navegation'
 import {
 	Header as HeaderStyle,
-	HeaderContainer,
+	Container,
 	Title,
 	List,
 	ListLink,
@@ -18,6 +18,14 @@ const Header = () => {
 	const [scroll, setScroll] = useState(0)
 	const [isLoading, setIsLoading] = useState(true)
 
+	const links = [
+		['Início', '#'],
+		['Sobre', '#aboutMe'],
+		['Habilidades', '#skills'],
+		['Projetos', '#projects'],
+		['Contato', '#contact']
+	]
+
 	window.onscroll = () => {
 		setScroll(window.scrollY)
 	}
@@ -28,12 +36,11 @@ const Header = () => {
 
 	return (
 		<HeaderStyle $scroll={scroll}>
-			<HeaderContainer>
+			<Container>
 				<TitleLink href="#">
 					<img
 						id="favicon"
 						src="/favicon.png"
-						alt=""
 						onLoad={() => removeSkeleton(setIsLoading, 'favicon')}
 						className="loading"
 					/>
@@ -47,36 +54,18 @@ const Header = () => {
 						<div>
 							<NavButton onClick={changeNavVisibility}>X</NavButton>
 							<List>
-								<li>
-									<ListLink onClick={changeNavVisibility} href="#">
-										Início
-									</ListLink>
-								</li>
-								<li>
-									<ListLink onClick={changeNavVisibility} href="#aboutMe">
-										Sobre
-									</ListLink>
-								</li>
-								<li>
-									<ListLink onClick={changeNavVisibility} href="#skills">
-										Habilidades
-									</ListLink>
-								</li>
-								<li>
-									<ListLink onClick={changeNavVisibility} href="#projects">
-										Projetos
-									</ListLink>
-								</li>
-								<li>
-									<ListLink onClick={changeNavVisibility} href="#contact">
-										Contato
-									</ListLink>
-								</li>
+								{links.map((link, index) => (
+									<li key={index}>
+										<ListLink onClick={changeNavVisibility} href={link[1]}>
+											{link[0]}
+										</ListLink>
+									</li>
+								))}
 							</List>
 						</div>
 					</>
 				</Navegation>
-			</HeaderContainer>
+			</Container>
 		</HeaderStyle>
 	)
 }

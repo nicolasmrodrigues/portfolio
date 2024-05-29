@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import { Props } from '.'
 
 export const Title = styled.span<Props>`
-	display: block;
 	font-size: 32px;
 	font-weight: 600;
 	color: #f1f1f1;

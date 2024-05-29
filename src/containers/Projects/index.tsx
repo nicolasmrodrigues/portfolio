@@ -1,12 +1,9 @@
 import Project from '../../components/Project'
-import Title from '../../components/Title'
-import { Projects as ProjectsStyle, ProjectsList } from './styles'
+import Section from '../../components/Section'
+import { ProjectsList } from './styles'
 
 const Projects = () => (
-	<ProjectsStyle id="projects">
-		<Title as="h2" $alignment="center">
-			Projetos
-		</Title>
+	<Section title="Projetos" id="projects">
 		<ProjectsList>
 			<Project
 				imageLink="/project1.webp"
@@ -30,7 +27,7 @@ const Projects = () => (
 				repoLink="https://github.com/nicolasmrodrigues/clima"
 			></Project>
 		</ProjectsList>
-	</ProjectsStyle>
+	</Section>
 )
 
 export default Projects

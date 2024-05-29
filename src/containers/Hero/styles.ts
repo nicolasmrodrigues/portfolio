@@ -1,10 +1,11 @@
 import styled from 'styled-components'
-import { Title } from '../Title/styles'
+import { Title } from '../../components/Title/styles'
 
 export const Hero = styled.div`
 	margin-top: 136px;
 	display: flex;
 	justify-content: space-between;
+	text-align: center;
 
 	img, .skeleton {
 		width: 363px;
@@ -15,7 +16,6 @@ export const Hero = styled.div`
 
 	@media (max-width: 768px) {
 		display: block;
-		text-align: center;
 		justify-content: center;
 		margin-top: 56px;
 
@@ -57,6 +57,7 @@ export const IconLink = styled.a`
 `
 
 export const Subtitle = styled(Title)`
+	display: block;
 	padding-bottom: 16px;
 	color: #36bcf7ff;
 	font-family: 'Fira Code', monospace;

@@ -4,10 +4,10 @@ import {
 	TextContainer,
 	ImageContainer
 } from './styles'
-import Title from '../Title'
-import Text from '../Text'
+import Title from '../../components/Title'
+import Text from '../../components/Text'
 import { useState } from 'react'
-import Skeleton from '../Skeleton'
+import Skeleton from '../../components/Skeleton'
 import { removeSkeleton } from '../../utils'
 
 const AboutMe = () => {
